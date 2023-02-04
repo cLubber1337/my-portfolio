@@ -1,0 +1,22 @@
+.main {
+    height: 100vh;
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skillBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 70px;
+}

@@ -1,0 +1,21 @@
+.main {
+    height: 100vh;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 70px;
+}
