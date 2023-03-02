@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className={style.main}>
       <div className={style.container}>
-        <h2>Andrew Soroko</h2>
+        <h2>Andrey Soroko</h2>
         <div className={style.content}>
           <div className={style.box}></div>
           <div className={style.box}></div>

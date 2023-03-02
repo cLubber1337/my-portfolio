@@ -19,7 +19,7 @@
     margin-top: 0;
 }
 .content {
-    width: 600px;
+    width: 70%;
     border: 2px solid;
     display: flex;
     justify-content: space-between;
@@ -28,4 +28,10 @@
     width: 86px;
     height: 86px;
     background-color: yellow;
+}
+@media (max-width: 680px) {
+    .box {
+        width: 40px;
+        height: 40px;
+    }
 }

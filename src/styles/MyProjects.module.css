@@ -3,19 +3,36 @@
     background-color: lightpink;
     display: flex;
     justify-content: center;
-    align-items: center;
+
+}
+@media (max-width: 640px) {
+    .main {
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 .container {
     width: 80%;
-    border: 2px solid;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+@media (max-width: 391px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+
+
 .block {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-top: 70px;
+    flex-wrap: wrap;
+    align-items: center;
 }

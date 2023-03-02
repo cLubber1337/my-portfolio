@@ -11,6 +11,7 @@ const MySkills = () => {
           <Skill />
           <Skill />
           <Skill />
+          <Skill />
         </div>
       </div>
     </div>

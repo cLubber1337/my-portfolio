@@ -5,4 +5,10 @@
     height: 30px;
     justify-content: space-around;
     align-items: center;
+    text-decoration: none;
+}
+@media (max-width: 441px) {
+    .navbar {
+        border: none;
+    }
 }

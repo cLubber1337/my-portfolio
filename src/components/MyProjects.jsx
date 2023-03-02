@@ -6,7 +6,7 @@ const MyProjects = () => {
   return (
     <div className={style.main}>
       <div className={style.container}>
-        <h2>My Skills</h2>
+        <h2>My Projects</h2>
         <div className={style.block}>
           <Project />
           <Project />
