@@ -1,10 +1,7 @@
 import React from "react";
 import style from "./ContactMe.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faMobileScreenButton,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
@@ -24,10 +21,9 @@ const ContactMe = () => {
           <div className={style.contactLeft}>
             <p>
               <FontAwesomeIcon
+                icon={faEnvelope}
                 style={{ marginRight: "15px", fontSize: "30px" }}
                 color={"#206491"}
-                href="mailto:supersoroko@gmail.com"
-                icon={faEnvelope}
               />
               <a href="mailto:supersoroko@gmail.com">supersoroko@gmail.com</a>
             </p>
@@ -36,7 +32,7 @@ const ContactMe = () => {
                 color={"#206491"}
                 style={{ marginRight: "18px", fontSize: "30px" }}
                 href="tel:+375256561690"
-                icon={faMobileScreenButton}
+                icon={faPhone}
               />
               <a href="tel:+375256561690">+375256561690</a>
             </p>

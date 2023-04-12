@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Footer.module.css";
+import style from "./Footer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 

@@ -2,10 +2,10 @@ import React, { memo } from "react";
 import style from "./Project.module.scss";
 import githubIcon from "../../assets/svg/githubIcon.svg";
 import demo from "../../assets/svg/demo.svg";
-const Project = memo(({ name, description, link, tech, code }) => {
+const Project = memo(({ name, description, link, tech, code, image }) => {
   return (
     <div className={style.main}>
-      <div className={style.imgProject}></div>
+      <img src={image} alt="" className={style.ImgProject} />
       <div className={style.description}>
         <h3 className={style.title}>{name}</h3>
         <p className={style.text}>{description}</p>

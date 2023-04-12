@@ -8,6 +8,8 @@ import html from "../../assets/img/skills/html.svg";
 import css from "../../assets/img/skills/css.svg";
 import mui from "../../assets/img/skills/mui.svg";
 import scss from "../../assets/img/skills/scss.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export const Home = () => {
   return (
@@ -23,7 +25,26 @@ export const Home = () => {
                 frameworks. Constantly learning new trends and innovations in
                 Web development. On this site you can see examples of my work.
               </p>
-              <button className={style.btn}>Download CV</button>
+              <div className={style.contact}>
+                <button className={style.btn}>Download CV</button>
+                <a
+                  href="https://www.linkedin.com/in/andrey-saroko/"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    style={{ fontSize: "42px", marginRight: "20px" }}
+                    color={"#2d2e32"}
+                    icon={faLinkedin}
+                  />
+                </a>
+                <a href="https://github.com/cLubber1337" target="_blank">
+                  <FontAwesomeIcon
+                    style={{ fontSize: "42px", marginRight: "15px" }}
+                    color={"#2d2e32"}
+                    icon={faGithub}
+                  />
+                </a>
+              </div>
             </div>
             <div className={style.photo}></div>
           </div>

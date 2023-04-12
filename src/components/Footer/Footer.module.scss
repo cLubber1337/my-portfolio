@@ -1,0 +1,17 @@
+@import "../../styles/_variables.scss";
+
+.footer{
+    background-color: #2d2e32;
+    color: whitesmoke;
+    margin-bottom: 60px;
+}
+.footer p {
+    padding: 20px 30px;
+    text-align: center;
+    @include breakpoint(sm) {
+        padding: 15px 25px;
+        font-size: 13px;
+    }
+}
+
+

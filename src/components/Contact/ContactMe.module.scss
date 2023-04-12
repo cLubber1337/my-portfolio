@@ -3,12 +3,20 @@
   height: 100vh;
   background-color: whitesmoke;
   display: flex;
+  width: 100%;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1000px;
   padding: 0 2rem;
+  @include breakpoint(lg) {
+    padding: 0 4rem;
+  }
+  @include breakpoint(sm) {
+    width: 100%;
+    padding: 0 2rem;
+  }
 }
 
 .relative {
@@ -27,6 +35,12 @@
   font-family: "Poppins", sans-serif;
   opacity: 0.8;
   letter-spacing: 4px;
+  @include breakpoint(lg) {
+    font-size: 4.25rem;
+  }
+  @include breakpoint(sm) {
+    font-size: 2.5rem;
+  }
 }
 
 .subTitle {
@@ -36,6 +50,12 @@
   font-size: 2.25rem;
   text-align: justify;
   font-weight: 600;
+  @include breakpoint(lg) {
+    font-size: 22px;
+  }
+  @include breakpoint(sm) {
+    font-size: 1.2rem;
+  }
 }
 
 .line {
@@ -43,16 +63,32 @@
   border-bottom: 3px solid #2980B9;
   width: 110px;
   padding-top: 50px;
+  @include breakpoint(lg) {
+    padding-top: 35px;
+  }
+  @include breakpoint(sm) {
+    padding-top: 25px;
+    width: 27%;
+    border-bottom: 2px solid #2980B9;
+  }
+
 }
 
 .row {
   display: flex;
   justify-content: space-between;
+  @include breakpoint(sm) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .contactLeft {
   flex-basis: 35%;
   margin-top: 15px;
+  @include breakpoint(lg) {
+    flex-basis: 45%;
+  }
 }
 
 .contactRight {
@@ -62,6 +98,9 @@
 .contactLeft p {
   margin-bottom: 30px;
   display: inline-block;
+  @include breakpoint(sm) {
+    display: flex;
+  }
 }
 .contactLeft p a {
   font-size: 18px;
@@ -69,6 +108,10 @@
 
 .socialIcons {
   margin-top: 20px;
+  margin-bottom: 20px;
+  @include breakpoint(sm) {
+    text-align: center;
+  }
 }
 
 .socialIcons svg {
@@ -89,6 +132,8 @@
 .contactRight form {
   width: 100%;
 }
+
+
 form input, form textarea {
   width: 100%;
   border: 3px solid #2d2e32;
@@ -119,5 +164,6 @@ form textarea:focus {
   transform: translateY(2px);
   box-shadow: none;
 }
+
 
 

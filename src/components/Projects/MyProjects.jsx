@@ -6,7 +6,7 @@ const projects = [
   {
     name: "Social Network",
     image:
-      "https://mohamed-mohamed.github.io/social-network/social-network.png",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1583&q=80",
     description:
       "A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",
     link: "https://social-network.netlify.app/",
@@ -16,7 +16,7 @@ const projects = [
   {
     name: "Social Network",
     image:
-      "https://mohamed-mohamed.github.io/social-network/social-network.png",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1583&q=80",
     description:
       "A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",
     link: "https://social-network.netlify.app/",
@@ -26,7 +26,7 @@ const projects = [
   {
     name: "Social Network",
     image:
-      "https://mohamed-mohamed.github.io/social-network/social-network.png",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1583&q=80",
     description:
       "A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",
     link: "https://social-network.netlify.app/",
