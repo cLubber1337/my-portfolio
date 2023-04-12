@@ -1,23 +1,21 @@
-import "./App.css";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import MySkills from "./components/MySkills";
-import MyProjects from "./components/MyProjects";
-import Job from "./components/Job";
-import ContactMe from "./components/ContactMe";
-import Footer from "./components/Footer";
+import "./App.scss";
+import Header from "./components/Header/Header";
+import { Home } from "./components/Home/Home";
+import MyProjects from "./components/Projects/MyProjects";
+import ContactMe from "./components/Contact/ContactMe";
+import Footer from "./components/Footer/Footer";
+import { About } from "./components/about/About";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Header />
-      <Main />
-      <MySkills />
+      <Home />
+      <About />
       <MyProjects />
-      <Job />
       <ContactMe />
       <Footer />
-    </div>
+    </main>
   );
 }
 

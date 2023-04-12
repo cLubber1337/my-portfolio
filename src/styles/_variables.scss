@@ -1,0 +1,35 @@
+@mixin breakpoint($point) {
+  @if $point == xs {
+    @media screen and (max-width: 320px) {
+      @content;
+    }
+  } @else if $point == sm {
+    @media screen and (max-width: 576px) {
+      @content;
+    }
+  } @else if $point == md {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $point == lg {
+    @media screen and (max-width: 900px) {
+      @content;
+    }
+  }
+}
+
+@mixin button-style {
+  background-color: #34495E;
+  background-image: linear-gradient(315deg, #34495E 0%, #2d2e32 74%);
+  padding: 14px 30px;
+  border: 2px solid #2d2e32;
+  outline: none;
+  width: fit-content;
+  border-radius: 7px;
+  color: whitesmoke;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 2px #777;
+  transition: background-color 0.5s ease-in-out, background-image 0.5s ease-in-out;
+}
