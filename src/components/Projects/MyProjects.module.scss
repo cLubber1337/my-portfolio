@@ -1,6 +1,6 @@
 @import "../../styles/_variables.scss";
 .projects {
-  background-image: radial-gradient(circle, #d8d8f2, whitesmoke);
+  background-color: whitesmoke;
   height: 100%;
   padding: 15px 0;
   @include breakpoint(lg) {
@@ -11,19 +11,19 @@
 .container {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 2rem;
+  padding: 8rem 2rem;
   @include breakpoint(lg) {
-    padding: 0 4rem;
+    padding: 2rem 4rem;
   }
   @include breakpoint(sm) {
-    padding: 0 20px;
+    padding: 30px 20px;
   }
 }
 .content {
   display: flex;
   flex-direction: column;
   @include breakpoint(lg) {
-    gap: 3rem;
+    gap: 1rem;
     margin: 0 auto;
   }
 }
@@ -38,16 +38,16 @@
     margin-bottom: 30px;
   }
   @include breakpoint(lg) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
 .projects h2 {
   margin: 0 auto;
   font-size: 7.25rem;
-  color: #dee3e4;
+  color: #b1bbbd;
+  opacity: 0.5;
   font-family: "Poppins", sans-serif;
-  opacity: 0.8;
   letter-spacing: 4px;
   @include breakpoint(lg) {
     font-size: 4.25rem;
@@ -65,7 +65,7 @@
   text-align: justify;
   font-weight: 600;
   @include breakpoint(lg) {
-    font-size: 22px;
+    font-size: 24px;
   }
   @include breakpoint(sm) {
     font-size: 1.2rem;
@@ -75,14 +75,14 @@
 .line {
   position: absolute;
   border-bottom: 3px solid #2980B9;
-  width: 110px;
+  width: 80px;
   padding-top: 60px;
   @include breakpoint(sm) {
     padding-top: 15px;
     width: 35px;
   }
   @include breakpoint(lg) {
-    padding-top: 25px;
+    padding-top: 35px;
     width: 70px;
     border-bottom: 2px solid #2980B9;
   }
@@ -108,4 +108,9 @@
   grid-template-rows: auto auto;
   height: auto;
   width: 100%;
+}
+@media screen and (max-height: 601px) {
+  .container {
+    padding-top: 4rem;
+  }
 }

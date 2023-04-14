@@ -4,8 +4,7 @@
   font-family: "Segoe UI Emoji", sans-serif;
   display: flex;
   align-items: center;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,.09);
+  //box-shadow: 0 0 10px rgba(0,0,0,.09);
   font-size: 20px;
   height: auto;
   justify-content: space-between;
@@ -15,11 +14,31 @@
   top: 0;
   width: 100%;
   z-index: 200;
+  transition: background-color 0.5s ease;
+  @include breakpoint(sm) {
+    padding: 25px 35px 25px 35px;
+
+  }
 }
+.headerBg {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
+}
+
 .logo {
   height: 20px;
+  cursor: pointer;
 }
-.ul {
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: #34495E;
+  @include breakpoint(md) {
+    display: block;
+  }
+}
+.navMenu {
   display: flex;
   gap: 1rem;
   list-style: none;
@@ -30,12 +49,30 @@
     transition: all .23s;
     cursor: pointer;
     tab-index: 1;
-    @include breakpoint(sm) {
-      font-size: 6px;
+    @include breakpoint(md) {
+      color: white;
     }
   }
   li a:hover {
       color: #2980B9;
+  }
+  @include breakpoint(md) {
+    position: fixed;
+    left: -100%;
+    top: 77px;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.9);
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    text-align: center;
+    transition: .3s;
+    padding-top: 50px;
+  }
+}
+.navMenu.active {
+  @include breakpoint(md) {
+    left: 0;
   }
 }
 

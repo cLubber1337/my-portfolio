@@ -7,12 +7,13 @@ const Footer = () => {
   return (
     <section className={style.footer}>
       <p>
-        Copyright © 2023. All rights are reserved{" "}
+        Copyright{" "}
         <FontAwesomeIcon
           color="#fff"
           icon={faHeart}
           style={{ marginLeft: "5px" }}
-        />
+        />{" "}
+        2023. All rights are reserved{" "}
       </p>
     </section>
   );
